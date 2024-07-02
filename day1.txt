@@ -1,0 +1,42 @@
+Why algorithm analysis?--
+1. To understand the behaviors of the code
+2. Measures to take to improve the efficiency and of the algorithm
+3.Compare and chose the best methodology/algorithm
+
+types of analysis--
+1. Best case scenarios
+2. worst case scenarios
+3. Average case scenarios
+
+
+A- 0.2 secs
+B- 1000 secs
+
+
+A- linear algorithm- O(n)
+B- Binary search algorithm O log(n)
+
+
+length  A   B  
+
+10      2   ~1hour 
+100     20     2
+1000    200    1.8   
+10000   2000    3.6   
+10^9    years   5.5
+
+
+
+when we will be working with a problem, size N
+Order 1 -- O(1)
+order 2---O(2)
+order 3... order N O(N)
+
+O(N^2)
+
+O(1)
+O(N)
+O(N^2)
+O log(n)
+O n log(N)
+O(N!)

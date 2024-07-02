@@ -1,0 +1,97 @@
+find the time complexity for the following questions??
+
+1. import time
+def constant_time_algorithm(n):
+return n * 2
+n = 10
+start_time = time.time()
+constant_time_algorithm(n)
+end_time = time.time()
+
+
+the time complexity is O(1)
+
+2. import time
+def linear_time_algorithm(arr):
+total = 0
+for num in arr:
+total += num
+return total
+arr = list(range(1000000)) # Adjust the size of the list as needed
+start_time = time.time()
+linear_time_algorithm(arr)
+end_time = time.time()
+
+tc=O(1000000)
+
+3. import time
+def quadratic_time_algorithm(arr):
+count = 0
+for i in arr:
+for j in arr:
+count += 1
+return count
+arr = list(range(1000)) # Adjust the size of the list as needed
+start_time = time.time()
+quadratic_time_algorithm(arr)
+end_time = time.time()
+
+tc=O(1000^2)
+
+4.import time
+import math
+def logarithmic_time_algorithm(n):
+result = 0
+while n > 1:
+n = n // 2
+result += 1
+return result
+n = 1000000 # Adjust the value of n as needed
+start_time = time.time()
+logarithmic_time_algorithm(n)
+end_time = time.time()
+
+tc=O(log(1000000))
+
+5.import time
+def linearithmic_time_algorithm(arr):
+if len(arr) <= 1:
+return arr
+mid = len(arr) // 2
+left = linearithmic_time_algorithm(arr[:mid])
+right = linearithmic_time_algorithm(arr[mid:])
+return merge(left, right)
+def merge(left, right):
+result = []
+i = j = 0
+while i < len(left) and j < len(right):
+if left[i] < right[j]:
+result.append(left[i])
+i += 1
+else:
+result.append(right[j])
+j += 1
+result.extend(left[i:])
+result.extend(right[j:])
+return result
+arr = list(range(1000000, 0, -1)) # Adjust the size of the list as needed
+start_time = time.time()
+linearithmic_time_algorithm(arr)
+end_time = time.time()
+
+O(n(log(n)))
+
+6. import time
+def exponential_time_algorithm(n):
+if n == 0 or n == 1:
+return 1
+else:
+return exponential_time_algorithm(n-1) + exponential_time_algorithm(n-2)
+n = 30 # Adjust the value of n as needed
+start_time = time.time()
+exponential_time_algorithm(n)
+end_time = time.time()
+
+
+tc=(2^n) solution:see the calls like when n=4 the number of function calls are 16 (2^4)
+

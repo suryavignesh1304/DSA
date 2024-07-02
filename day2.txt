@@ -1,0 +1,82 @@
+--- forming equations--
+
+
+1.O(1):mathematics,no loops,no recursion,no function call
+ex:
+    def demo(x,y):
+        result=x*y
+        return result
+
+for this example:
+time complexity is O(1)
+
+
+2.O(n):recursion,loops,function calls
+
+ex-1:
+    def printer(x):
+        for i in range(x):
+            print("hello")
+
+    printer(10)
+
+time complexity is O(10) =>cause we are printing it 10 times
+
+ex-2:
+     def recurse(n):
+        if n==0:
+            return
+        else:
+            pass
+    recurse(n,1)
+
+time complexity is O(n) 
+
+
+3.O(n^c):where c represents the n0. of loops or recursive functions/methods
+
+ex:
+    for i in range(5): =>tc for this is O(n)
+         for j in range(5):=>tc for this is O(n)
+            print("*"*j)
+
+time complexity is O(n^2)
+
+4.O(log(n)):there is a loop and the loop variable is getting divided or multiplied 
+
+ex:
+    for i in range(10,i*2):
+        print(i)
+
+
+
+5.O(log(log(n))):
+=>increasing the group variable by cube or square(by a bar)
+=>when the 
+ex:
+    for i in range(10,i**2):
+        print(i)
+
+
+
+
+=>when there are one than one loop and they are not nested then the tc is O(first loop)+O(second loop)
+
+
+example assignment:
+    find the time complexity of the following function
+     
+     def find_max(arr):
+        if not arr:
+            return None
+
+        max_val=arr[0]
+
+        for i in arr[1:]:
+            if i>max_val:
+                max_val=i
+        return max_val
+
+
+=>tc=O(len(arr)) or o(n) because the array length can be said to 'n'
+
