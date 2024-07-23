@@ -1,6 +1,6 @@
 Why algorithm analysis?--
 1. To understand the behaviors of the code
-2. Measures to take to improve the efficiency and of the algorithm
+2. Measures to take to improve the efficiency  of the algorithm
 3.Compare and chose the best methodology/algorithm
 
 types of analysis--

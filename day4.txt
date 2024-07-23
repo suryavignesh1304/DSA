@@ -1,0 +1,2 @@
+1.counting number from string
+2.iterative power

@@ -54,7 +54,7 @@ ex:
 =>increasing the group variable by cube or square(by a bar)
 =>when the 
 ex:
-    for i in range(10,i**2):
+    for i in range(10,i**3):
         print(i)
 
 
