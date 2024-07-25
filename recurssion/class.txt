@@ -1,10 +1,26 @@
-import math
+slicing:
+ [start:stop:step]
 
-def linear(a,x):
-    n=len(a)
-    for i in (0,n):
-        return a[i] == x
-    
+ Ex:
+ a=[1,2,3,4,5,6,7]
+print(a[::2]) for finding the odd number in the list
+
+print(a[::1]) for finding the even numbers in the list
+
+a = [i**2 for i in range(10)]
+print(a) => this is using loops in lists
+
+
+Given a list of words, generate a list of their lengths.
+Given a list of words, generate a list of their first letters.
+Given a list of words, generate a list with each word converted to uppercase.
+Given a string of mixed characters, generate a list of digits present in the string.
+Given a string, generate a list of vowels present in the string.
+Given a list of words, generate a list of words that are longer than three characters.
+Given a list of words, generate a list with each word reversed.
+
+
+
 # Given a list of words, generate a list of their lengths.
 
 words=['one','hello','me']
@@ -31,12 +47,7 @@ str = 'hello'
 vowels = 'aeiou'
 list = [l for l in str.lower() if l in vowels]
 print(list)
-# OR
-str = 'hello'
-v1 = 'aeiou'
-v2='AEIOU'
-list = [l for l in str if l in v1 or l in v2]
-print(list)
+
 
 # Given a list of words, generate a list of words that are longer than three characters.
 word=[word for word in words if len(word)>3]
@@ -46,4 +57,3 @@ print(word)
 # Given a list of words, generate a list with each word reversed.
 reversed_words = [word[::-1] for word in words]
 print(reversed_words)
-

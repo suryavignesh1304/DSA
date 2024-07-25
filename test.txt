@@ -1,0 +1,10 @@
+○	a) 
+
+int fact(int n) 
+{
+     if (n == 0) return 1; 
+     else return n * fact(n-1); 
+     }
+○	b) int gcd(int a, int b) { if (b == 0) return a; else return gcd(b, a % b); }
+○	c) int fib(int n) { if (n <= 1) return n; else return fib(n-1) + fib(n-2); }
+○	d) int power(int x, int n) { if (n == 0) return 1; else return x * power(x, n-1); }
